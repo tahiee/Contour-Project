@@ -1,0 +1,119 @@
+.nospam-main {
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+  background-color: var(--Main-Color-White, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nospam-header {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 247, 253, 0.5) 0%,
+    #f7f7fd 50.17%,
+    rgba(247, 247, 253, 0.5) 100%
+  );
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 60px;
+}
+@media (max-width: 991px) {
+  .nospam-header {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.email-input{
+  border: 0px #fff;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-transform: capitalize;
+  outline: none;
+}
+.nospam-section {
+  display: flex;
+  width: 544px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  color: var(--Main-Color-Primary, #7065f0);
+  text-align: center;
+  letter-spacing: -0.24px;
+  font: 700 24px/150% Plus Jakarta Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+.subtitle {
+  color: var(--Main-Color-Black, #000929);
+  letter-spacing: -0.4px;
+  margin-top: 8px;
+  font: 700 40px/140% Plus Jakarta Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+.description {
+  color: var(--Main-Color-Black, #000929);
+  text-align: center;
+  align-self: stretch;
+  margin-top: 16px;
+  font: 400 16px/160% Plus Jakarta Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+@media (max-width: 991px) {
+  .description {
+    max-width: 100%;
+  }
+}
+.form {
+  border-radius: 8px;
+  background-color: var(--Main-Color-White, #fff);
+  align-self: stretch;
+  display: flex;
+  margin-top: 32px;
+  gap: 20px;
+  padding: 16px 21px;
+}
+@media (max-width: 991px) {
+  .form {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
+}
+.form-label {
+  color: var(--Main-Color-Black, #000929);
+  letter-spacing: -0.09px;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+  font: 400 18px/145% Plus Jakarta Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+.submit-button {
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--Main-Color-Primary, #7065f0);
+  color:  #fff;
+  white-space: nowrap;
+  text-align: center;
+  padding: 12px 40px;
+  font: 700 16px/150% Plus Jakarta Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+  border: none;
+  }
+@media (max-width: 991px) {
+  .submit-button {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+.community {
+  color: var(--Main-Color-Primary, #7065f0);
+  text-align: center;
+  margin-top: 29px;
+  font: 400 14px/140% Plus Jakarta Sans, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}

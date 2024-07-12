@@ -1,0 +1,197 @@
+#theNavbar {
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  justify-content: space-between;
+  padding: 24px 47px;
+  /* background-color: #afd5e2; */
+  background: linear-gradient(120deg, #f2f2f2, #b08afc);
+  /* transition: 0.2s; */
+  /* position: fixed;
+  box-shadow: 0px 1px 10px #999;
+  border-radius: 2px; */
+}
+.navbar {
+  /* Your regular navbar styles */
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Additional styles for when the navbar is sticky */
+  background-color: #ffffff; /* Change background color when sticky */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+@media (max-width: 991px) {
+  #theNavbar {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 25px 20px;
+  }
+}
+.div-2 {
+  display: flex;
+  gap: 20px;
+  color: var(--Main-Color-Black, #000929);
+  font-weight: 500;
+  justify-content: space-between;
+  margin: auto 0;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    flex-wrap: wrap;
+  }
+}
+.img {
+  /* aspect-ratio: 3.33; */
+  object-fit: auto;
+  object-position: center;
+  width: 90%;
+  height: 40px;
+  /* max-width: 100%; */
+}
+.div-3 {
+  display: flex;
+  padding-right: 8px;
+  gap: 20px;
+  justify-content: space-between;
+  margin: auto 0;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .div-3 {
+    flex-wrap: wrap;
+  }
+}
+.div-4 {
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.div-5 {
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.div-6 {
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.div-7 {
+  display: flex;
+  gap: 8px;
+}
+/* .div-8 {
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+} */
+.dropdownBtn {
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  border: none;
+  background: none;
+  color: #373ec3;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+.dropDown {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+.dropDwon-Content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  z-index: 12;
+}
+.dropDwon-Content a {
+  display: block;
+  padding: 12px 8px;
+}
+.dropDown:hover .dropDwon-Content {
+  display: block;
+}
+.dropDwon-Content a:hover {
+  background-color: #f1f1f1;
+}
+
+.img-2 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 16px;
+  margin: auto 0;
+}
+.div-9 {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .div-9 {
+    white-space: initial;
+  }
+}
+.div-10 {
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.img-3 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 16px;
+  margin: auto 0;
+}
+.div-11 {
+  justify-content: end;
+  display: flex;
+  gap: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.div-12 {
+  cursor: pointer;
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  justify-content: center;
+  border-radius: 8px;
+  border-color: rgba(224, 222, 247, 1);
+  border-style: solid;
+  border-width: 2px;
+  color: var(--Main-Color-Black, #000929);
+  white-space: nowrap;
+  padding: 12px 24px;
+}
+.div-12:hover {
+  background-color: #fff;
+}
+@media (max-width: 991px) {
+  .div-12 {
+    white-space: initial;
+    padding: 5px 20px;
+  }
+}
+.div-13 {
+  cursor: pointer;
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--Main-Color-Primary, #7065f0);
+  color: var(--Main-Color-White, #fff);
+  padding: 12px 24px;
+}
+.div-13:hover {
+  background-color: black;
+}
+@media (max-width: 991px) {
+  .div-13 {
+    padding: 5px 20px;
+  }
+}

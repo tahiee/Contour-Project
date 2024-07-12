@@ -1,0 +1,10 @@
+.Main-Seller{
+    width: 100%;
+    /* background-color: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid{
+    padding: 10px 12px;
+}
