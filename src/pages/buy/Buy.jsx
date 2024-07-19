@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import hm1 from "../../Images/hm1.jpg";
 import hm2 from "../../Images/hm2.jpg";
 import hm3 from "../../Images/hm3.jpg";
+import { MdVerified } from "react-icons/md";
+import { MdAddHomeWork } from "react-icons/md";
+import { MdOutlineFilterAlt } from "react-icons/md";
+
 const Buy = () => {
   return (
     <>
@@ -42,24 +46,44 @@ const Buy = () => {
               <div className="combine-section">
                 <div className="buyers-section-1">
                   <div className="buyers-section-2">
-                    <div className="buyers-section-container-img">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/feb3cf6a60222d637df18043f4fbcc2faaed704a5d3f7698b2f0e0dee9e710ff?apiKey=cc7f068e9f014680946a7e3092608e4d&"
-                        className="buyers-img-1"
-                      />
-                      <div className="buyers-heading">Buy</div>
+                    <div className="seller-heading-div">
+                      <MdAddHomeWork />
+
+                      <p className="seller-head">All Residential</p>
                     </div>
                   </div>
                 </div>
                 <div className="seller-heading">
                   <div className="seller-heading-div">
-                    <img
+                    <p className="seller-head">Price</p>
+                  </div>
+                </div>
+                <div className="seller-heading">
+                  <div className="seller-heading-div">
+                    <p className="seller-head">Size</p>
+                  </div>
+                </div>
+                <div className="seller-heading">
+                  <div className="seller-heading-div">
+                    <p className="seller-head">Bedrooms</p>
+                  </div>
+                </div>
+                <div className="seller-heading">
+                  <div className="seller-heading-div">
+                    <MdVerified />
+                    <p className="seller-head">Mohtabr Verified</p>
+                  </div>
+                </div>
+                <div className="seller-heading">
+                  <div className="seller-heading-div">
+                    {/* <img
                       loading="lazy"
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/861d644e924654d9e0d54fdfd7260052583bcf43073a34a5c15eef775aa7862a?apiKey=cc7f068e9f014680946a7e3092608e4d&"
                       className="renter-img-1"
-                    />
-                    <div className="seller-head">Sell</div>
+                    /> */}
+                    <MdOutlineFilterAlt />
+
+                    <p className="seller-head">More Filter</p>
                   </div>
                 </div>
               </div>
@@ -117,59 +141,8 @@ const Buy = () => {
                     <div className="main-b-s-2-details">
                       <div className="price-main">
                         <div className="price-child">
-                          <div className="price">Rs 2,400</div>
-                          <div className="month">/month</div>
-                        </div>
-                        <img
-                          loading="lazy"
-                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/66633daf050138476ec4b3afbc180b580106796be13af22c885c870b2d324be3?apiKey=cc7f068e9f014680946a7e3092608e4d&"
-                          className="price-main-img"
-                        />
-                      </div>
-                      <div className="property-name">St. Crystal</div>
-                      <div className="property-address">
-                        210 US Highway, Highland Lake, FL
-                      </div>
-                      <div className="theline" />
-                      <div className="details-section">
-                        <div className="main-bed-div">
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a135b25fd48eb6c857473e8a8645819b89df9614816d05b1e12a6bb825f9bfc8?apiKey=cc7f068e9f014680946a7e3092608e4d&"
-                            className="main-bed-img"
-                          />
-                          <div className="bed-head">4 Beds</div>
-                        </div>
-                        <div className="main-bath">
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/98983c682993ebdcbd44f615a17934d1faeb9e8af304c7c8c6d3f4c2c5f5158d?apiKey=cc7f068e9f014680946a7e3092608e4d&"
-                            className="main-bath-img"
-                          />
-                          <div className="bath-head">2 Bathrooms</div>
-                        </div>
-                        <div className="main-space">
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1dad8a5128e4cc8b8dc0b6f17800398fda60b104bce8e0d62b580ce8f65fc81?apiKey=cc7f068e9f014680946a7e3092608e4d&"
-                            className="main-space-img"
-                          />
-                          <div className="space-mng">6x8 m²</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="column-same-forall">
-                <div className="b-s-c">
-                  <div className="b-s-c-2">
-                    <img loading="lazy" src={hm3} className="b-s-c-2-img" />
-                    <div className="main-b-s-2-details">
-                      <div className="price-main">
-                        <div className="price-child">
-                          <div className="price">Rs 2,400</div>
-                          <div className="month">/month</div>
+                          <div className="price">Rs 52</div>
+                          <div className="target-price-word">/Lac</div>
                         </div>
                         <img
                           loading="lazy"
@@ -219,8 +192,212 @@ const Buy = () => {
                     <div className="main-b-s-2-details">
                       <div className="price-main">
                         <div className="price-child">
-                          <div className="price">Rs 2,400</div>
-                          <div className="month">/month</div>
+                          <div className="price">Rs 60</div>
+                          <div className="target-price-word">/Lac</div>
+                        </div>
+                        <img
+                          loading="lazy"
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/66633daf050138476ec4b3afbc180b580106796be13af22c885c870b2d324be3?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                          className="price-main-img"
+                        />
+                      </div>
+                      <div className="property-name">St. Crystal</div>
+                      <div className="property-address">
+                        210 US Highway, Highland Lake, FL
+                      </div>
+                      <div className="theline" />
+                      <div className="details-section">
+                        <div className="main-bed-div">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a135b25fd48eb6c857473e8a8645819b89df9614816d05b1e12a6bb825f9bfc8?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bed-img"
+                          />
+                          <div className="bed-head">4 Beds</div>
+                        </div>
+                        <div className="main-bath">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/98983c682993ebdcbd44f615a17934d1faeb9e8af304c7c8c6d3f4c2c5f5158d?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bath-img"
+                          />
+                          <div className="bath-head">2 Bathrooms</div>
+                        </div>
+                        <div className="main-space">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1dad8a5128e4cc8b8dc0b6f17800398fda60b104bce8e0d62b580ce8f65fc81?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-space-img"
+                          />
+                          <div className="space-mng">6x8 m²</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="column-same-forall">
+                <div className="b-s-c">
+                  <div className="b-s-c-2">
+                    <img loading="lazy" src={hm1} className="b-s-c-2-img" />
+                    <div className="main-b-s-2-details">
+                      <div className="price-main">
+                        <div className="price-child">
+                          <div className="price">Rs 20</div>
+                          <div className="target-price-word">/Lac</div>
+                        </div>
+                        <img
+                          loading="lazy"
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/66633daf050138476ec4b3afbc180b580106796be13af22c885c870b2d324be3?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                          className="price-main-img"
+                        />
+                      </div>
+                      <div className="property-name">St. Crystal</div>
+                      <div className="property-address">
+                        210 US Highway, Highland Lake, FL
+                      </div>
+                      <div className="theline" />
+                      <div className="details-section">
+                        <div className="main-bed-div">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a135b25fd48eb6c857473e8a8645819b89df9614816d05b1e12a6bb825f9bfc8?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bed-img"
+                          />
+                          <div className="bed-head">4 Beds</div>
+                        </div>
+                        <div className="main-bath">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/98983c682993ebdcbd44f615a17934d1faeb9e8af304c7c8c6d3f4c2c5f5158d?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bath-img"
+                          />
+                          <div className="bath-head">2 Bathrooms</div>
+                        </div>
+                        <div className="main-space">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1dad8a5128e4cc8b8dc0b6f17800398fda60b104bce8e0d62b580ce8f65fc81?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-space-img"
+                          />
+                          <div className="space-mng">6x8 m²</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="column-same-forall">
+                <div className="b-s-c">
+                  <div className="b-s-c-2">
+                    <img loading="lazy" src={hm3} className="b-s-c-2-img" />
+                    <div className="main-b-s-2-details">
+                      <div className="price-main">
+                        <div className="price-child">
+                          <div className="price">Rs 14</div>
+                          <div className="target-price-word">/Lac</div>
+                        </div>
+                        <img
+                          loading="lazy"
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/66633daf050138476ec4b3afbc180b580106796be13af22c885c870b2d324be3?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                          className="price-main-img"
+                        />
+                      </div>
+                      <div className="property-name">St. Crystal</div>
+                      <div className="property-address">
+                        210 US Highway, Highland Lake, FL
+                      </div>
+                      <div className="theline" />
+                      <div className="details-section">
+                        <div className="main-bed-div">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a135b25fd48eb6c857473e8a8645819b89df9614816d05b1e12a6bb825f9bfc8?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bed-img"
+                          />
+                          <div className="bed-head">4 Beds</div>
+                        </div>
+                        <div className="main-bath">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/98983c682993ebdcbd44f615a17934d1faeb9e8af304c7c8c6d3f4c2c5f5158d?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bath-img"
+                          />
+                          <div className="bath-head">2 Bathrooms</div>
+                        </div>
+                        <div className="main-space">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1dad8a5128e4cc8b8dc0b6f17800398fda60b104bce8e0d62b580ce8f65fc81?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-space-img"
+                          />
+                          <div className="space-mng">6x8 m²</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="column-same-forall">
+                <div className="b-s-c">
+                  <div className="b-s-c-2">
+                    <img loading="lazy" src={hm1} className="b-s-c-2-img" />
+                    <div className="main-b-s-2-details">
+                      <div className="price-main">
+                        <div className="price-child">
+                          <div className="price">Rs 45</div>
+                          <div className="target-price-word">/Lac</div>
+                        </div>
+                        <img
+                          loading="lazy"
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/66633daf050138476ec4b3afbc180b580106796be13af22c885c870b2d324be3?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                          className="price-main-img"
+                        />
+                      </div>
+                      <div className="property-name">St. Crystal</div>
+                      <div className="property-address">
+                        210 US Highway, Highland Lake, FL
+                      </div>
+                      <div className="theline" />
+                      <div className="details-section">
+                        <div className="main-bed-div">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a135b25fd48eb6c857473e8a8645819b89df9614816d05b1e12a6bb825f9bfc8?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bed-img"
+                          />
+                          <div className="bed-head">4 Beds</div>
+                        </div>
+                        <div className="main-bath">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/98983c682993ebdcbd44f615a17934d1faeb9e8af304c7c8c6d3f4c2c5f5158d?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-bath-img"
+                          />
+                          <div className="bath-head">2 Bathrooms</div>
+                        </div>
+                        <div className="main-space">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1dad8a5128e4cc8b8dc0b6f17800398fda60b104bce8e0d62b580ce8f65fc81?apiKey=cc7f068e9f014680946a7e3092608e4d&"
+                            className="main-space-img"
+                          />
+                          <div className="space-mng">6x8 m²</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="column-same-forall">
+                <div className="b-s-c">
+                  <div className="b-s-c-2">
+                    <img loading="lazy" src={hm1} className="b-s-c-2-img" />
+                    <div className="main-b-s-2-details">
+                      <div className="price-main">
+                        <div className="price-child">
+                          <div className="price">Rs 50</div>
+                          <div className="target-price-word">/Lac</div>
                         </div>
                         <img
                           loading="lazy"
@@ -265,7 +442,7 @@ const Buy = () => {
               </div>
             </div>
           </div>
-          <div className="buyer-section-3">
+          {/* <div className="buyer-section-3">
             <div className="buyer-sec-child">
               <div className="column-same-forall">
                 <div className="b-s-c">
@@ -433,7 +610,7 @@ const Buy = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="property-btn">Veiw More</div>
         </div>
       </div>
