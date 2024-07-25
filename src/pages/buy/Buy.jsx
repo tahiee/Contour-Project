@@ -12,7 +12,7 @@ import { MdOutlineFilterAlt } from "react-icons/md";
 const Buy = () => {
   return (
     <>
-      <div className="buy-main" style={{ marginTop: "100px" }}>
+      <div className="buy-main">
         <div className="container">
           <div className="main-navigate">
             <nav className="navigate-nav">

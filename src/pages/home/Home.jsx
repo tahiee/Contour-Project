@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styleHome.css";
 import { CiLocationArrow1 } from "react-icons/ci";
 import h11 from "../../Images/h11.png";
@@ -8,6 +8,27 @@ import propertyIcon from "../../Images/property.png";
 import About from "../about/About";
 
 const Home = () => {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+  
+    window.addEventListener('scroll', onScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+  
+  useEffect(() => {
+    if (scrollPosition !== 0) { // Only scroll if position is not zero
+      window.scrollTo(0, scrollPosition);
+    }
+  }, [scrollPosition]);
+  
   const [buyColor, setBuycolor] = useState(true);
   const [buyFontWe, setbuyFontWe] = useState(true);
   const [bgColor, setBgcolor] = useState(false);

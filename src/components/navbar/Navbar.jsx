@@ -8,37 +8,33 @@ import Login from "../Login/Login";
 import Signup from "../signup/Signup";
 
 const Navbar = () => {
-  
   const [isSticky, setIsSticky] = useState(false);
-
   const [signupPopup, setSignupPopup] = useState(false);
   const [loginPopup, setLoginPopup] = useState(false);
 
   useEffect(() => {
-    // Function to handle scrolling behavior
     const handleScroll = () => {
-      const navbar = document.querySelector("#theNavbar");
-      if (navbar && window.scrollY >= navbar.offsetTop) {
+      if (window.scrollY > 0) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
       }
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up: remove event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Empty dependency array means this effect runs only once after initial render
+  }, []);
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
+  
   return (
     <>
       <div id="theNavbar" className={`navbar ${isSticky ? "sticky" : ""}`}>

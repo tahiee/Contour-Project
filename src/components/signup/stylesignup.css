@@ -1,42 +1,82 @@
+
 .Main-signup {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed; /* Fixed positioning for overlay */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  position: fixed; 
+  background: rgba(0, 0, 0, 0.5); 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
   inset: 0;
   z-index: 1001;
 }
+
 .container-fload {
   padding: 10px 12px;
 }
+
+/* Signup box styling */
 .signupBox {
   display: flex;
   justify-content: center;
+
   align-items: center;
   flex-direction: column;
   width: 100%;
+  max-width: 400px; 
   gap: 10px;
-  padding: 10px 10px;
+  padding: 20px; 
+  background: #fff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Cancel button styling */
 .cancel-Btn-signup {
   border: none;
   background: none;
   font-size: 30px;
-  /* float: right; */
+  color: #888; 
+  cursor: pointer;
 }
+
+/* Signup section */
 .signup {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  width: 100%;
+  max-width: 400px; 
+  gap: 20px; 
+}
+
+/* Input fields styling */
+.signupBox input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.signupBox button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff; 
+  border: none;
+  border-radius: 5px;
+  color: white; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background 0.3s; 
+}
+
+/* Button hover effect */
+.signupBox button:hover {
+  background: #0056b3; 
 }

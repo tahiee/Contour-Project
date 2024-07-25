@@ -1,3 +1,4 @@
+/* Main container for the login section */
 .Main-login {
   width: 100%;
   height: 100vh;
@@ -8,37 +9,95 @@
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
   inset: 0;
   z-index: 1001;
-
 }
+
+/* Container for login form elements */
 .container-fload {
   padding: 10px 12px;
 }
-.loginBox{
+
+/* Login box styling */
+.loginBox {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  max-width: 400px; /* Max width for the form */
   gap: 10px;
-  padding: 10px 10px;
+  padding: 20px; /* More padding for better spacing */
+  background: #fff; /* White background for form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-.cancel-Btn{
-    border: none;
-    background: none;
-    font-size: 30px;
-    float: right;
+
+/* Cancel button styling */
+.cancel-Btn {
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: #888; /* Grey color for cancel button */
+  cursor: pointer; /* Cursor change on hover */
+
 }
-.login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 10px;
+
+/* Login section */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Max width for the container */
+  gap: 20px; /* More gap for better spacing */
+}
+
+/* Input fields styling */
+.loginBox input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0; /* Margins for spacing between inputs */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.loginBox button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff; /* Blue background */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* White text */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Cursor change on hover */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+/* Button hover effect */
+.loginBox button:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional button for signup link */
+.container-fload > div > button {
+  padding: 10px;
+  background: #28a745; /* Green background */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* White text */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Cursor change on hover */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+/* Signup button hover effect */
+.container-fload > div > button:hover {
+  background: #218838; /* Darker green on hover */
+}
+h4{
+  color: white;
 }
