@@ -3825,7 +3825,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .mui-style-1x5jdmq:focus::-ms
 
 .mui-style-1i475tm .MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track backgroundColor {
     main: #E85451;
-    light: rgb(236, 118, 115);
+    right: rgb(236, 118, 115);
     dark: rgb(162, 58, 56);
     contrast-text: #fff;
 }
@@ -4799,7 +4799,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .mui-style-1x5jdmq:focus::-ms
 
 .mui-style-rphvkk color {
     main: #737678;
-    light: rgb(143, 145, 147);
+    right: rgb(143, 145, 147);
     dark: rgb(80, 82, 84);
     contrast-text: #fff;
 }
