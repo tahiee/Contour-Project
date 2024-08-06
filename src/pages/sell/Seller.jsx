@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import "./styleSeller.css";
-// import sellicon from "../../list-images/sell-icon.svg";
 import sellicon from "../../list-images/sell1.png";
-// import renticon from "../../list-images/rent-icon.svg";
 import renticon from "../../list-images/rent1.png";
 import searchicon from "../../list-images/search.svg";
 const Seller = () => {
+  const cities = ["karachi", "lahore", "islamabad"];
+  const [ selectCity , setSelectCity] = useState({})
   return (
     <>
       <div
@@ -37,13 +37,13 @@ const Seller = () => {
                     <div className="MuiBox-root mui-style-a0jm0i">
                       <div className="MuiBox-root mui-style-c6gxxn">
                         <div className="MuiBox-root mui-style-1tq5059">
-                          <img src={sellicon} alt="" className="sellIcon"/>
+                          <img src={sellicon} alt="" className="sellIcon" />
                         </div>
                         <div>Sell</div>
                       </div>
                       <div className="MuiBox-root mui-style-1hdbq1s">
                         <div className="MuiBox-root mui-style-1tq5059">
-                          <img src={renticon} alt="" className="rentIcon"/>
+                          <img src={renticon} alt="" className="rentIcon" />
                         </div>
                         <div>Rent</div>
                       </div>
@@ -86,7 +86,7 @@ const Seller = () => {
                               className="MuiButtonBase-root MuiTab-root MuiTab-textColorSecondary mui-style-1cvj5a9"
                               tabIndex="-1"
                               type="button"
-                              role="tab" 
+                              role="tab"
                               aria-selected="false"
                             >
                               Commercial
@@ -213,16 +213,11 @@ const Seller = () => {
                                 </div>
                               </div>
                               <input
-                                autoComplete="off"
-                                id=":R1qc7cqnd6:"
                                 placeholder="Select your city"
                                 type="text"
                                 className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused mui-style-1gnht4k"
-                                aria-autocomplete="list"
-                                aria-expanded="false"
                                 autoCapitalize="none"
                                 spellCheck="false"
-                                role="combobox"
                                 value=""
                               />
                               <div className="MuiAutocomplete-endAdornment mui-style-mxlkbn">
