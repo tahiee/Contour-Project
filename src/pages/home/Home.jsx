@@ -6,6 +6,7 @@ import h11 from "../../Images/h11.png";
 import { FaPeopleGroup } from "react-icons/fa6";
 import propertyIcon from "../../Images/property.png";
 import About from "../about/About";
+import Navbar from "../../components/navbar/Navbar";
 
 const Home = () => {
 
@@ -76,6 +77,7 @@ const Home = () => {
   );
   return (
     <>
+      <Navbar/>
       <div className="home">
         <div className="div-15">
           <div className="div-16">

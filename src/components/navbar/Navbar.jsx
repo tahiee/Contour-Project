@@ -6,6 +6,8 @@ import "./styleNav.css";
 import logo from "../../Images/logo2.png";
 import Login from "../Login/Login";
 import Signup from "../signup/Signup";
+import { IoPersonOutline } from "react-icons/io5";
+
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -27,14 +29,14 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
-  
+
   return (
     <>
       <div id="theNavbar" className={`navbar ${isSticky ? "sticky" : ""}`}>
@@ -50,10 +52,14 @@ const Navbar = () => {
             <div className="div-6">
               <Link to="/seller">Post Property</Link>
             </div>
+            <div className="div-6">
+              <Link to="/map">Map</Link>
+            </div>
             <div className="div-7">
               <div className="div-8 dropDown">
                 <Link className="dropdownBtn">Manage Property</Link>
                 <div className="dropDwon-Content" style={{ left: "0px" }}>
+                  <Link to='/checkproperty'>Check Your Propoerty Online</Link>
                   <Link>Property Updates</Link>
                   <Link>Media</Link>
                   <Link>Blogs</Link>
@@ -79,18 +85,20 @@ const Navbar = () => {
           </div>
         </div>
         <div className="div-11">
-          <div className="div-12" onClick={() => setLoginPopup(true)}>
-            
+          {/* <div className="div-12" onClick={() => setLoginPopup(true)}>
+
             Login
-            
-          </div>
+
+          </div> */}
+          <Link to='/signup'>
           <div className="div-13" onClick={() => setSignupPopup(true)}>
-            Sign up
-          </div>
+              <IoPersonOutline />
+            </div>
+          </Link>
         </div>
       </div>
-      {loginPopup && <Login onClose={() => setLoginPopup(false)} />}
-      {signupPopup && <Signup onCloseSignup={() => setSignupPopup(false)} />}
+      {/* {loginPopup && <Login onClose={() => setLoginPopup(false)} />} */}
+      {/* {signupPopup && <Signup onCloseSignup={() => setSignupPopup(false)} />} */}
     </>
   );
 };

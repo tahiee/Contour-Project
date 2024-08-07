@@ -1,92 +1,114 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-import "./stylesignup.css";
-import { MdCancel } from "react-icons/md";
-import { Link, Navigate, useNavigate } from "react-router-dom";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import './stylesignup.css'; // Ensure to include your CSS for styling
+import { Link, useNavigate } from 'react-router-dom';
 
-// eslint-disable-next-line react/prop-types
-const Signup = ({ onCloseSignup }) => {
-  const Navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+const Singup = () => {
+  const [isSignIn, setIsSignIn] = useState(true);
+  const navigate = useNavigate()
 
-  const handleChange = ({ target: { name, value } }) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  const toggle = () => {
+    setIsSignIn(!isSignIn);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const { username, email, password } = formData;
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSignIn(true);
+    }, 200);
+  }, []);
 
-    // Basic input validation
-    if (!username || !email || !password) {
-      alert("All fields are required");
-      return;
-    }
+  const nai = () => {
+    navigate('/')
+    console.log('nai working');
 
-    try {
-      const res = await axios.post(
-        "http://localhost:8001/auth/signup",
-        formData
-      );
-      console.log(res.data);
-      alert("User Created Successfully");
-      Navigate("/login");
-    } catch (error) {
-      if (
-        error.response &&
-        error.response.data &&
-        error.response.data.message
-      ) {
-        alert(`Error submitting form: ${error.response.data.message}`);
-      } else {
-        alert(`Error submitting form: ${error.message}`);
-      }
-    }
-  };
+  }
+
   return (
-    <>
-      <section className="Main-signup">
-        <div className="container-fload">
-          <div className="signup">
-            <form className="signupBox" onSubmit={handleSubmit}>
-              <MdCancel className="cancel-Btn-signup" onClick={onCloseSignup} />
-              <h1>SignUp</h1>
-              <input
-                type="text"
-                placeholder="Username"
-                name="username"
-                value={formData.username}
-                onChange={handleChange}
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <input
-                type="password"
-                placeholder="Passcode"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-              />
-              <button>Singup</button>
-            </form>
+    <div className='signupers'>
+      <div id="containerSig" className={`containerSig ${isSignIn ? 'sign-in' : 'sign-up'}`}>
+        <div className="row">
+          {/* SIGN UP */}
+          <div className="col align-items-center flex-col sign-up">
+            <div className="form-wrapper align-items-center">
+
+              
+              <div className="form sign-up">
+                <div className="input-group">
+                  <i className='bx bxs-user'></i>
+                  <input type="text" placeholder="Username" />
+                </div>
+                <div className="input-group">
+                  <i className='bx bx-mail-send'></i>
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div className="input-group">
+                  <i className='bx bxs-lock-alt'></i>
+                  <input type="password" placeholder="Password" />
+                </div>
+                <div className="input-group">
+                  <i className='bx bxs-lock-alt'></i>
+                  <input type="password" placeholder="Confirm password" />
+                </div>
+                <button>Sign up</button>
+                <p>
+                  <span>Already have an account?</span>
+                  <b onClick={toggle} className="pointer">Sign in here</b>
+                </p>
+              </div>
+            </div>
           </div>
+          {/* END SIGN UP */}
+
+          {/* SIGN IN */}
+          <div className="col align-items-center flex-col sign-in">
+            <div className="form-wrapper align-items-center">
+              <div className="form sign-in">
+                <button onClick={nai}>Go Back</button>
+                <div className="input-group">
+                  <i className='bx bxs-user'></i>
+                  <input type="text" placeholder="Username" />
+                </div>
+                <div className="input-group">
+                  <i className='bx bxs-lock-alt'></i>
+                  <input type="password" placeholder="Password" />
+                </div>
+                <button>Sign in</button>
+                <p><b>Forgot password?</b></p>
+                <p>
+                  <span>Don't have an account?</span>
+                  <b onClick={toggle} className="pointer">Sign up here</b>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* END SIGN IN */}
         </div>
-      </section>
-    </>
+
+        {/* CONTENT SECTION */}
+        <div className="row content-row">
+          {/* SIGN IN CONTENT */}
+          <div className="col align-items-center flex-col">
+            <div className="text sign-in">
+
+              <h2>Welcome</h2>
+              <h2>Mohtabr Estate</h2>
+            </div>
+            <div className="img sign-in"></div>
+          </div>
+          {/* END SIGN IN CONTENT */}
+
+          {/* SIGN UP CONTENT */}
+          <div className="col align-items-center flex-col">
+            <div className="img sign-up"></div>
+            <div className="text sign-up">
+              <h2>Join with us</h2>
+            </div>
+          </div>
+          {/* END SIGN UP CONTENT */}
+        </div>
+        {/* END CONTENT SECTION */}
+      </div>
+    </div>
   );
 };
 
-export default Signup;
+export default Singup;

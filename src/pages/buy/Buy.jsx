@@ -8,10 +8,12 @@ import hm3 from "../../Images/hm3.jpg";
 import { MdVerified } from "react-icons/md";
 import { MdAddHomeWork } from "react-icons/md";
 import { MdOutlineFilterAlt } from "react-icons/md";
+import Navbar from "../../components/navbar/Navbar";
 
 const Buy = () => {
   return (
     <>
+      <Navbar/>
       <div className="buy-main">
         <div className="container">
           <div className="main-navigate">

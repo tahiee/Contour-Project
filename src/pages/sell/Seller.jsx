@@ -4,11 +4,14 @@ import "./styleSeller.css";
 import sellicon from "../../list-images/sell1.png";
 import renticon from "../../list-images/rent1.png";
 import searchicon from "../../list-images/search.svg";
+import Navbar from "../../components/navbar/Navbar";
 const Seller = () => {
   const cities = ["karachi", "lahore", "islamabad"];
-  const [ selectCity , setSelectCity] = useState({})
+  const [selectCity, setSelectCity] = useState({})
+
   return (
     <>
+      <Navbar />
       <div
         style={{
           display: "flex",
@@ -59,7 +62,7 @@ const Seller = () => {
                       <div className="MuiTabs-root mui-style-wrrr8">
                         <div
                           className="MuiTabs-scroller MuiTabs-fixed mui-style-1anid1y"
-                          // style="overflow: hidden; margin-bottom: 0"
+                        // style="overflow: hidden; margin-bottom: 0"
                         >
                           <div
                             aria-label="secondary tabs example"

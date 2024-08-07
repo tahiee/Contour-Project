@@ -35,8 +35,8 @@ const FeaturedPro = () => {
                     <div className="main-b-s-2-details">
                       <div className="price-main">
                         <div className="price-child">
-                          <div className="price">$2,400</div>
-                          <div className="month">/month</div>
+                          <div className="price">Rs 35</div>
+                          <div className="month">/Lac</div>
                         </div>
                         <img
                           loading="lazy"
@@ -90,8 +90,8 @@ const FeaturedPro = () => {
                     <div className="main-b-s-2-details">
                       <div className="price-main">
                         <div className="price-child">
-                          <div className="price">$2,400</div>
-                          <div className="month">/month</div>
+                          <div className="price">Rs 24</div>
+                          <div className="month">/Lac</div>
                         </div>
                         <img
                           loading="lazy"
